@@ -1,0 +1,309 @@
+
+html,
+body {
+    
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+p{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+}   
+
+body {
+    background-image: url('https:/images.unsplash.com/photo-1613828330596-982c62f72e9a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow:auto;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main-container{
+    display: flex;
+    padding: 10px 25px 25px 25px;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    background-position: center;
+    border-radius: 25px;
+    background-color: #aaa4a4;
+    box-shadow: 2px 3px 5px 3px #534f4f;
+    color: #8d8585;
+     
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    
+
+}
+.pp:hover{
+    box-shadow: 2px 3px 5px 3px #534f4f;
+    background-color:#413e3e;
+}
+
+.fl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+    box-shadow: 2px 3px 5px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155px;
+    width: 136px;
+    display: block;
+    border-radius: 10px;
+    background-color: #413e3e;
+
+    opacity: 0.5;
+}
+
+.main1 img {
+    width: 46px;
+}
+
+.box1:hover {
+    opacity: 2;
+}
+
+.box2:hover {
+    opacity: 2;
+}
+
+.box3:hover {
+    opacity: 2;
+}
+
+.box4:hover {
+    opacity: 2;
+}
+
+.box5:hover {
+    opacity: 2;
+}
+
+.box6:hover {
+    opacity: 2;
+}
+
+
+.middle2 {
+    justify-content: center;
+    display: none;  
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:25px;
+}
+
+.middle1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap:25px;
+}
+
+.middle .box11 .box2 {
+    padding-left: 10px;
+}
+
+.temp,
+.humdity,
+.speed,
+.tempp,
+.humdityy,
+.speedd {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input[type=search] {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.tempdata,
+.tempdata1,
+.tempdata2,
+.tempdataa,
+.tempdata11,
+.tempdata22 {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.mi {
+    border: 2px solid black;
+    align-self: flex-end;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.t,
+.t1,
+.t2,
+.tt,
+.tt1,
+.tt2,
+.hum1,
+.hum2,
+.hum3,
+.speed3,
+.speed1,
+.speed2,
+.hum11,
+.hum22,
+.hum33,
+.speed11,
+.speed22,
+.speed33 {
+    display: flex;
+    justify-content: row;
+}
+
+#s {
+    padding: 10px 12px 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ccccd7;
+}
+
+.temp p,
+.humdity p,
+.speed p,
+.tempp p,
+.humdityy p,
+.speedd p {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6 {
+    padding-left: 8px;
+}
+
+.mintemp1,
+.mintemp2,
+.mintemp,
+.minhum,
+.minhum1,
+.minhum2,
+.minspeed,
+.minspeed1,
+.minspeed2 {
+    padding-left: 5px;
+}
+
+.tempdata1 p,
+.tempdata2 p,
+.tempdata p,
+.tempdata11 p,
+.tempdataa p,
+.tempdata22 p {
+    color: whitesmoke;
+    padding-left: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pp {
+    background-color: #413e3e88;
+    padding: 15px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.mid {
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.box4,
+.box5,
+.box6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155px;
+    width: 136px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 3px;
+    opacity: 0.5;
+    background-color: #413e3e;
+}
+
+.p4,
+.p5.p6 {
+    font-weight: lighter;
+}
+
+.tt1 p,
+.tt2 p,
+.hum22 p,
+.hum33 p,
+.speed22,
+.speed33 {
+    font-weight: lighter;
+}
+
+@media screen and (max-width:503px) {
+    .main-container {
+        box-shadow: none;
+        width: fit-content;
+        border-radius: 0;
+        height: auto;
+        /* flex: 1; */
+
+    }
+    body {
+        display: block;
+    }
+
+}
+/*.hh{
+    background-color: rgb(175, 19, 19);
+    width: 100%;
+    height: auto;
+}   */
