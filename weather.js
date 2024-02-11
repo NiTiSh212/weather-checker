@@ -24,11 +24,15 @@ let minspeedd = document.querySelector(".minspeedd");
 let minspeed11 =document.querySelector(".minspeed11");
 let minspeed22 = document.querySelector(".minspeed22");
 
+
 function solver(ans) {
     let p = url.concat(ans);
     fetch(p)
 
         .then((response) => {
+            if(!response.ok){
+                throw new error(alert("enter the correct city "));
+               }
             return response.json();
         }).then((result) => {
             console.log(result);
@@ -56,9 +60,11 @@ function solver(ans) {
             minspeed.append(speed1);
             minspeed1.append(speed2);
             minspeed2.append(speed3); 
-       });
+       })   
 
-}
+    .catch((error)=>{
+        alert("enter the correct city name");
+    }
 function solver1(ans1){
    let s= url1.concat(ans1);
    console.log(s);
@@ -123,6 +129,28 @@ search.addEventListener('keydown', (event) => {
     }
 
 });
+    search.addEventListener('search',()=>{
+     mintemp.innerText="";
+        mintemp1.innerText="";
+        mintemp2.innerText="";
+        minhum.innerText="";
+        minhum1.innerText="";
+        minhum2.innerText="";
+        minspeed.innerText="";
+        minspeed1.innerText="";
+        minspeed2.innerText="";
+        mintemp11.innerText=""; 
+        minspeedd.innerText="";
+        minspeed11.innerText="";
+        mintemp22.innerText="";
+        minhumm.innerText="";
+        minhum11.innerText="";
+        minhum22.innerText="";
+        mintempp.innerText="";
+        minspeed22.innerText="";
+
+})
+
 btn.addEventListener("click",(event)=>{
     if(middle2.style.display==="none"){
     middle2.style.display="flex";
